@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      document.querySelectorAll("section").forEach((el) => {
+        el.style.marginTop = `${
+          document.querySelectorAll("nav")[0].offsetHeight
+        }px`;
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jalan Jalan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://traveling-alief.vercel.app/files/lib/animate-css/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://traveling-alief.vercel.app/files/lib/wow/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="">France</a></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#home" class="Cari"
+                ><i class="fa-solid fa-house"></i> &nbsp; Home</a
+              >
+            </li>
+            <li><a href="#about" class="burung">About Us</a></li>
+            <li><a href="#Destinasi" class="burung">Destinations</a></li>
+            <li><a href="#Gallery" class="burung">Gallery</a></li>
+            <li><a href="#Contact" class="burung">Contact</a></li>
+            <li>
+              <a href="login.html" class="tbl-biru"
+                ><i class="fa-solid fa-user"></i> &nbsp; Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <header>
+        <video
+          id="bg-video"
+          poster="y2mate.com - The Gems of Borobudur Temple_v720P.mp4"
+          autoplay
+          muted
+          loop
+        >
+          <source
+            src="Video tanpa judul ‐ Dibuat dengan Clipchamp (1).mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div
+          class="video-info wow animate__animated animate__bounceInDown"
+          data-wow-duration="3s"
+        >
+          <h1>Discover France: Explore the Charm of French Travel.</h1>
+          <p>
+            From iconic landmarks to hidden culinary gems, let's uncover the
+            essence of France.
+          </p>
+          <br />
+          <br />
+          <br />
+          <a href="#about" class="btn">Explore Now</a>
+        </div>
+      </header>
+    </section>
+    <div class="semua-about">
+      <section id="about">
+        <div class="about-hh1">
+          <div class="about-content">
+            <h1 class="">About</h1>
+            <div class="about-img">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+                alt=""
+              />
+            </div>
+            <p>
+              Destinasi Wisata di Prancis: Keindahan dan Keajaiban di Setiap
+              Sudut Prancis adalah salah satu negara paling populer di dunia
+              untuk wisata, menawarkan berbagai destinasi yang memukau. Dari
+              kota-kota romantis hingga pemandangan alam yang menakjubkan,
+              berikut adalah beberapa destinasi yang wajib dikunjungi di
+              Prancis:
+            </p>
+            <a class="btn-1" href="#Destinasi">Read more</a>
+          </div>
+        </div>
+        <div class="container-about">
+          <section class="about-hh1">
+            <div class="about-content">
+              <h1>Letak peta</h1>
+              <p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11429811.195866847!2d-7.97426742556068!3d45.621067754601754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sPrancis!5e0!3m2!1sid!2sid!4v1732020692480!5m2!1sid!2sid"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </p>
+              <p>
+                Peta Prancis menunjukkan lokasi negara ini di Eropa bagian
+                barat. Prancis berbatasan dengan beberapa negara dan wilayah.
+                Dimulai dari Sebelah Utara ada Belgia, Luksemburg. Sebelah Timur
+                ada Jerman, Swiss, Italia. Sebelah Selatan ada Spanyol, Andorra,
+                Monako, Laut Mediterania. Sebelah Barat ada Samudra Atlantik.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <section id="Destinasi">
+      <div class="h1"><h1>Destinasi</h1></div>
+
+      <div class="amba">
+        <div class="container-card">
+          <div class="card" style="--clr:#000000;"">
+          <div class="imgBx">
+            <img
+              src="https://i.pinimg.com/1200x/e6/44/38/e64438352162a442b501428641d6ff2f.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2>Côte d'Azur</h2>
+            <!-- Tombol untuk membuka pop-up -->
+            <button class="btn" id="openModal">Lihat Destinasi</button>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="card" style="--clr:#000000;"">
+          <div class="imgBx">
+            <img
+              src="https://i.pinimg.com/564x/6a/99/ee/6a99ee843798375c5f7049316e8d31ed.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2>Menara eifell</h2>
+            <!-- Tombol untuk membuka pop-up -->
+            <button class="btn" id="openModal-2">Lihat Destinasi</button>
+            <!-- Pop-Up -->
+            <div class="modal" id="modal-2">
+              <div class="modal-content">
+                <span class="close-button" id="closeModal-2">&times;</span>
+                <div class="modal-header">
+                  <h2>Nama Destinasi</h2>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="destinasi.jpg"
+                    alt="Destinasi"
+                    class="modal-image"
+                  />
+                  <p>
+                    Menara Eiffel adalah simbol ikonik Paris dan salah satu
+                    tempat paling terkenal di dunia. Dibangun pada 1889, menara
+                    ini menawarkan pemandangan spektakuler kota Paris dari
+                    puncaknya. Bisa dikunjungi dengan naik lift atau tangga,
+                    serta menikmati suasana romantis di sekitar taman Champ de
+                    Mars.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="card" style="--clr:#000000;"">
+          <div class="imgBx">
+            <img
+              src="https://i.pinimg.com/1200x/84/27/02/8427022912fbc3c4100821cb54b80cb6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2>Lembah Loire</h2>
+            <!-- Tombol untuk membuka pop-up -->
+            <button class="btn" id="openModal-1">Lihat Destinasi</button>
+            <!-- Pop-Up -->
+            <div class="modal" id="modal">
+              <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <div class="modal-header">
+                  <h2>Nama Destinasi</h2>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="destinasi.jpg"
+                    alt="Destinasi"
+                    class="modal-image"
+                  />
+                  <p>
+                    Jika Anda mencari pantai indah dan gaya hidup mewah, kawasan
+                    Riviera Prancis adalah tempat yang sempurna. Kota-kota
+                    seperti Nice, Cannes, dan Monaco menawarkan pemandangan laut
+                    Mediterania yang memukau serta kehidupan malam yang meriah
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="modal-1">
+              <div class="modal-content">
+                <span class="close-button" id="closeModal-1">&times;</span>
+                <div class="modal-header">
+                  <h2>Nama Destinasi</h2>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="https://i.pinimg.com/1200x/84/27/02/8427022912fbc3c4100821cb54b80cb6.jpg  "
+                    alt="Destinasi"
+                    class="modal-image"
+                  />
+                  <p>
+                    adalah kawasan yang terletak di sepanjang Sungai Loire di
+                    Prancis tengah. Tempat ini terkenal sebagai "Taman Prancis"
+                    karena keindahan alamnya yang luar biasa, ladang anggur yang
+                    luas, serta sejumlah kastil megah dan bersejarah yang
+                    menjadi daya tarik utama.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="card" style="--clr:#000000;"">
+          <div class="imgBx">
+            <img
+              src="https://i.pinimg.com/1200x/c7/50/19/c75019cb6593eb98d5ecaa041ae2b02e.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2>Normandy</h2>
+            <!-- Tombol untuk membuka pop-up -->
+            <button class="btn" id="openModal-3">Lihat Destinasi</button>
+            <!-- Pop-Up -->
+            <div class="modal" id="modal-3">
+              <div class="modal-content">
+                <span class="close-button" id="closeModal-3">&times;</span>
+                <div class="modal-header">
+                  <h2>Nama Destinasi</h2>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="destinasi.jpg"
+                    alt="Destinasi"
+                    class="modal-image"
+                  />
+                  <p>
+                    Normandy adalah salah satu wilayah paling bersejarah dan
+                    indah di Prancis, terletak di bagian utara negara ini,
+                    berbatasan langsung dengan Selat Inggris. Normandy terkenal
+                    karena lanskapnya yang memesona, situs sejarah Perang Dunia
+                    II, serta kuliner khasnya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="akhir-about">
+      <h3>
+        Sudah lihat deksripsinya?
+        <a href="#Gallery">Lihat gallerynya juga dong!</a>
+      </h3>
+    </div>
+
+    <section id="Gallery">
+      <div class="dekg">
+        <h1>OUR Gallery</h1>
+      </div>
+      <div class="galery">
+        <div  class="video-info wow animate__animated animate__bounceInLeft"
+        data-wow-duration="1s">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="v-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="h-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="v-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="big-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="h-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="v-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div class="big-stretch">
+          <img src="gallery.jpg" alt="" />
+        </div>
+        <div>
+          <img src="gallery.jpg" alt="">
+        </div>
+        <div class="h-stretch">
+          <img src="gallery.jpg" alt="">
+        </div>
+
+        <div>
+          <img src="gallery.jpg" alt="">
+        </div>
+
+        <div class="big-stretch">
+          <img src="gallery.jpg" alt="">
+        </div>
+
+        <div>
+          <img src="gallery.jpg" alt="">
+        </div>
+
+        <div>
+          <img src="gallery.jpg" alt="">
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="Rekomendasi"></section>
+
+    <footer id="Contact">
+      <div class="container-f">
+        <h3>Contact </h3>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Grid dengan Opsi</title>
+    <link rel="stylesheet" href="ikan.css">
+</head>
+<body>
+    <section id="Gallery">
+        <div class="semua-gallery">
+          <ul>
+            <li class="list-g active" data-filter="All">All</li>
+            <li class="list-g" data-filter="apa">apa</li>
+            <li class="list-g" data-filter="kek">kek</li>
+            <li class="list-g" data-filter="dah">dah</li>
+            <li class="list-g" data-filter="besar">besar</li>
+          </ul>
+  
+          <div class="produk">
+            <div class="itemBox apa">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox kek">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox dah">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox besar">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox apa">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox kek">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox dah">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox besar">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox apa">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox kek">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox dah">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox besar">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox apa">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox kek">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox dah">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox besar">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox apa">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox kek">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox dah">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+            <div class="itemBox besar">
+              <img
+                src="Eiffel Tower Paris Beautiful View, HD World, 4k Wallpaper, Image, Background, Photo and Picture.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script text="text/javascript">
+        $(document).ready(function(){
+         $('.list-g').click(function(){
+          const value = $(this).attr('data-filter');
+          if ( value == 'all').show('1000');
+          else {
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+          }
+        })
+        // add class //
+        $('.list-g').click(function(){
+        $(this).addClass('active').siblings().removeClass('active')
+        })
+      })
+    </script>
+</body>
+</html>
